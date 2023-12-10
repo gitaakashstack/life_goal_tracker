@@ -1,0 +1,16 @@
+.goallist-container {
+  width: 40%;
+  min-width: 300px;
+}
+
+.goallist-container > div {
+  padding: 10px 20px;
+  background-color: rgb(168, 18, 131);
+  color: whitesmoke;
+  box-shadow: 0 0 3px 1px rgb(252, 200, 200);
+  cursor: pointer;
+}
+
+.goallist-container > div:not(:last-child) {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,59 @@
+.input-elements-wrapper > div > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.input-elements-wrapper input {
+  display: block;
+  width: 100%;
+  outline: none;
+  padding: 5px;
+}
+
+.input-elements-wrapper label {
+  display: block;
+  font-weight: 600;
+}
+
+.invalid-input input {
+  outline: 2px solid rgb(216, 73, 73);
+}
+.invalid-input label {
+  color: rgb(216, 73, 73);
+}
+
+.button {
+  margin-top: 15px;
+}
+.button > button {
+  display: inline-block;
+  padding: 10px 0;
+  width: 200px;
+  border: none;
+  background-color: rgb(180, 40, 180);
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.button > button > span {
+  display: inline-block;
+  position: relative;
+  transition: transform 1s;
+}
+
+.button > button > span:after {
+  content: "\00bb";
+  position: absolute;
+  font-size: 1.8rem;
+  right: -18px;
+  top: -10px;
+  opacity: 0;
+  transition: transform 1s opacity 1s;
+}
+
+.button > button:hover > span {
+  transform: translateX(-10px);
+}
+
+.button > button:hover > span::after {
+  opacity: 1;
+}

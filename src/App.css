@@ -1,0 +1,11 @@
+.main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.main > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+.main > div:not(:last-child) {
+  margin-bottom: 100px;
+}
